@@ -1,0 +1,5 @@
+div.game-space {
+    height: 3em;
+    width: 3em;
+    border: 2px solid black;
+}

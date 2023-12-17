@@ -1,0 +1,9 @@
+<div class="game-board">
+    <app-game-space
+    *ngFor="let s of spaces; index as i"
+    [value]="s"
+    (click)="onClickSpace(i)"
+    ></app-game-space>
+</div>
+<p>Winner: {{winner}}</p>
+<p>Turn: {{turn}}</p>
