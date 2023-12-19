@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-game-space',
+  selector: 'app-tictactoe-space',
   standalone: true,
   imports: [],
-  templateUrl: './game-space.component.html',
-  styleUrl: './game-space.component.css'
+  templateUrl: './tictactoe-space.component.html',
+  styleUrl: './tictactoe-space.component.css'
 })
-export class GameSpaceComponent {
+export class TictactoeSpaceComponent {
   @Input() value: string = '';
   //This whole component is unnecessary, but want it for @Input and stuff
 }

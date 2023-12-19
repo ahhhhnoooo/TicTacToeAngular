@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GameSpaceComponent } from './game-space.component';
+import { TictactoeSpaceComponent } from './tictactoe-space.component';
 
-describe('GameSpaceComponent', () => {
-  let component: GameSpaceComponent;
-  let fixture: ComponentFixture<GameSpaceComponent>;
+describe('TictactoeSpaceComponent', () => {
+  let component: TictactoeSpaceComponent;
+  let fixture: ComponentFixture<TictactoeSpaceComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GameSpaceComponent]
+      imports: [TictactoeSpaceComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(GameSpaceComponent);
+    fixture = TestBed.createComponent(TictactoeSpaceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

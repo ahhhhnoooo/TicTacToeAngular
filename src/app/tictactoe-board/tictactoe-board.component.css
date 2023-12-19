@@ -1,4 +1,4 @@
-div.game-board {
+div.tictactoe-board {
     display: flex;
     flex-flow: row wrap;
     max-width: 10em;
