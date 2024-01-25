@@ -1,9 +1,5 @@
 <div class="tictactoe-board">
-    <app-tictactoe-space
-    *ngFor="let s of game.board; index as i"
-    [value]="s"
-    (click)="onClickSpace(i)"
-    ></app-tictactoe-space>
+    <div *ngFor="let s of gameBoard; index as i" class="tictactoe-space" (click)="onClick(i)">
+        <img src="assets/img/{{s}}.svg" alt="{{s}}" />
+    </div>
 </div>
-<p>Winner: {{game.winner}}</p>
-<p>Turn: {{game.turn}}</p>

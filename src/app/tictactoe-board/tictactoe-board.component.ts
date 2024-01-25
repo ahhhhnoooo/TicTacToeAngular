@@ -1,31 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { TictactoeSpaceComponent } from '../tictactoe-space/tictactoe-space.component';
-declare class TicTacToeGame {
-  static onClick(game: TicTacToeGameState, index: number): TicTacToeGameState;
-}
+import { TicTacToeGameService } from '../tictactoe-game/tictactoe-game.service';
 
 @Component({
   selector: 'app-tictactoe-board',
   standalone: true,
-  imports: [CommonModule, TictactoeSpaceComponent],
+  imports: [CommonModule],
   templateUrl: './tictactoe-board.component.html',
   styleUrl: './tictactoe-board.component.css'
 })
-export class TictactoeBoardComponent {
-  game: TicTacToeGameState = {
-    board: Array(9).fill(''),
-    winner: '',
-    turn: 'x'
+export class TictactoeBoardComponent implements OnInit {
+
+  gameBoard: string[] = [];
+  constructor(
+    private ticTacToeGameService: TicTacToeGameService,
+  ) {}
+
+  ngOnInit(): void {
+    this.ticTacToeGameService.gameState$.subscribe((state) => {
+      this.gameBoard = state.board;
+    })
   }
 
-  onClickSpace(index: number): void {
-    this.game = TicTacToeGame.onClick(this.game, index);
+  onClick(index: number): void {
+    this.ticTacToeGameService.onClickSpace(index);
   }
-}
-interface TicTacToeGameState {
-  board: string[],
-  winner: string,
-  turn: string
 }

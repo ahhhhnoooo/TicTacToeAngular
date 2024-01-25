@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TictactoeSpaceComponent } from './tictactoe-space.component';
+import { TictactoeStatusComponent } from './tictactoe-status.component';
 
-describe('TictactoeSpaceComponent', () => {
-  let component: TictactoeSpaceComponent;
-  let fixture: ComponentFixture<TictactoeSpaceComponent>;
+describe('TictactoeStatusComponent', () => {
+  let component: TictactoeStatusComponent;
+  let fixture: ComponentFixture<TictactoeStatusComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TictactoeSpaceComponent]
+      imports: [TictactoeStatusComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TictactoeSpaceComponent);
+    fixture = TestBed.createComponent(TictactoeStatusComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

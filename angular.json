@@ -26,9 +26,6 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "scripts": [
-              "src/assets/tictactoe-game/tictactoe-game.js"
             ]
           },
           "configurations": {
@@ -87,9 +84,6 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "scripts": [
-              "src/assets/tictactoe-game/tictactoe-game.js"
             ]
           }
         }

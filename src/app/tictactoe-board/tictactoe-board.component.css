@@ -1,5 +1,10 @@
 div.tictactoe-board {
     display: flex;
     flex-flow: row wrap;
-    max-width: 10em;
+    max-width: 650px;
+}
+div.tictactoe-space {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
 }
