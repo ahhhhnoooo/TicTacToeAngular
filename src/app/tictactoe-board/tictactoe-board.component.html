@@ -1,5 +1,5 @@
 <div class="tictactoe-board">
     <div *ngFor="let s of gameBoard; index as i" class="tictactoe-space" (click)="onClick(i)">
-        <img src="assets/img/{{s}}.svg" alt="{{s}}" />
+        <img src="assets/img/{{s?s:'blank'}}.svg" alt="{{s?s:'blank'}}" />
     </div>
 </div>
