@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TicTacToeGameService } from '../tictactoe-game/tictactoe-game.service';
 
 @Component({
-  selector: 'app-tictactoe-board',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './tictactoe-board.component.html',
-  styleUrl: './tictactoe-board.component.css'
+    selector: 'app-tictactoe-board',
+    imports: [CommonModule],
+    templateUrl: './tictactoe-board.component.html',
+    styleUrl: './tictactoe-board.component.css'
 })
 export class TictactoeBoardComponent implements OnInit {
 

@@ -2,11 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { TicTacToeGameService } from '../tictactoe-game/tictactoe-game.service';
 
 @Component({
-  selector: 'app-tictactoe-status',
-  standalone: true,
-  imports: [],
-  templateUrl: './tictactoe-status.component.html',
-  styleUrl: './tictactoe-status.component.css'
+    selector: 'app-tictactoe-status',
+    imports: [],
+    templateUrl: './tictactoe-status.component.html',
+    styleUrl: './tictactoe-status.component.css'
 })
 export class TictactoeStatusComponent implements OnInit {
 

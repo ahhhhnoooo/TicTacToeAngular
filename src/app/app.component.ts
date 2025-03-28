@@ -5,11 +5,10 @@ import { TictactoeBoardComponent } from './tictactoe-board/tictactoe-board.compo
 import { TictactoeStatusComponent } from './tictactoe-status/tictactoe-status.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, TictactoeBoardComponent, TictactoeStatusComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    imports: [CommonModule, RouterOutlet, TictactoeBoardComponent, TictactoeStatusComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'TicTacToeAngular';
