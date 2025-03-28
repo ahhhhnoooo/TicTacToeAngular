@@ -4,8 +4,10 @@ import { TicTacToeGameService } from '../tictactoe-game/tictactoe-game.service';
 @Component({
     selector: 'app-tictactoe-status',
     imports: [],
-    templateUrl: './tictactoe-status.component.html',
-    styleUrl: './tictactoe-status.component.css'
+    template: `
+      <p>Turn: {{turn}}</p>
+      <p>Winner: {{winner}}</p>
+    `
 })
 export class TictactoeStatusComponent implements OnInit {
 
